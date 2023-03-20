@@ -1,0 +1,91 @@
+" ' 구분 잘해라. print시.
+input함수는 입력을 받기위해 잠깐 멈춘다.
+
+인풋은 스트링으로 받음.
+
+
+
+---
+
+print("Hello " + input("what is your name?"))
+
+인풋 먼저 실행해서 인풋함수 자체가 입력값 문자열로 바뀐뒤 concatenation
+
+print(len(input("What is your name?")))
+
+이런식으로 함수 조합가능.
+
+다만 가독성있게
+
+print( len ( input ("What is your name?") ) )
+공백 삽입
+
+
+name = input("What is your name?")
+
+length = len(name)
+
+print(length)
+
+이런식의 활용도 가능.
+
+00000000
+print("Welcome to the Band Name Generator.")
+street = input("What's the name of the city you grew up in?\n")
+pet = input("What's your pet's name?\n")
+print("Your band name could be " + street + " " + pet)
+---
+
+숫자형 변수에서는 
+콤마등을 123_345 이런 식으로 표현할 수 있다. 컴퓨터는 _ 인식 안함.
+
+
+concatenation 안댐.
+
+나눗셈은 항상 float으로 작동한다.
+
+**연산자는 파이썬이 수학이나 데이터 사이언스자들한테 인기 있는 이유.
+
+PEMDASLR
+
+Parentheses
+Exponents
+Multiplication
+Division
+Addition
+Substraction
+left
+right
+
+round 함수. float을 두번쨰 인자 만큼의 자리수까지 표시함.
+
+"{:.2f}".format(bill_per_person)
+
+0000000
+
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
+#Write your code below this line 👇
+
+a = input("how much is it")
+b = input("tip percentage")
+c = input("split bill number")
+
+result = (a * (1 + b/100))/ c
+
+
+print("result is.. : ",result)
+
+-----
+
+
+day 15.
+
+ide 에서 유용한기능. 창 스플릿하기. 타임라인 보기.(로컬히스토리)
+
+우클릭으로 해당 범위 리팩터 가능.
